@@ -65,6 +65,7 @@ namespace SkillBoxGame
             this.NameOne.Name = "NameOne";
             this.NameOne.Size = new System.Drawing.Size(209, 29);
             this.NameOne.TabIndex = 2;
+            this.NameOne.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckTextBox);
             // 
             // NameTwo
             // 
@@ -73,7 +74,7 @@ namespace SkillBoxGame
             this.NameTwo.Name = "NameTwo";
             this.NameTwo.Size = new System.Drawing.Size(209, 29);
             this.NameTwo.TabIndex = 3;
-            this.NameTwo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Enter);
+            this.NameTwo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckTextBox);
             // 
             // button1
             // 
