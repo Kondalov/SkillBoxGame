@@ -122,6 +122,7 @@ namespace SkillBoxGame
             if (three_is_a_winner)
             {
                 DisabledButton();
+
                 string winner;
                 if (turn)
                 {
@@ -138,12 +139,10 @@ namespace SkillBoxGame
                 }
 
                 MessageBox.Show(winner + " - You Win!!!", "Winner Panel");
-                DisabledButton();
             }
 
             else
             {
-                DisabledButton();
                 if (turn_count == 9)
                 {
                     draw_count.Text = (Int32.Parse(draw_count.Text) + 1).ToString();
@@ -156,16 +155,15 @@ namespace SkillBoxGame
         /// </summary>
         private void DisabledButton()
         {
-            try
+            foreach (Control c in Controls)
             {
-                foreach (Control c in Controls)
+                try
                 {
                     Button b = (Button)c;
                     b.Enabled = false;
+                    b.Text = "('..')";
                 }
-            }
-            catch
-            {
+                catch { }
 
             }
         }
