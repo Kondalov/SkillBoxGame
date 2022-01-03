@@ -34,6 +34,8 @@ namespace SkillBoxGame
             }
             else
             {
+                error_form2.Visible = false;
+                NameOne.BackColor = default;
                 Form1.SetPlayersName(NameOne.Text, NameTwo.Text);
                 this.Close();
             }
