@@ -22,13 +22,11 @@ namespace SkillBoxGame
         {
             if (NameOne.Text == "")
             {
-                this.ControlBox = false;
                 error_form2.Visible = true;
                 NameOne.BackColor = Color.Red;
             }
             else if (NameTwo.Text == "")
             {
-                this.ControlBox = false;
                 error_form2.Visible = true;
                 NameOne.BackColor = default;
                 NameTwo.BackColor = Color.Red;
