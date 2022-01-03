@@ -35,6 +35,7 @@ namespace SkillBoxGame
             this.NameOne = new System.Windows.Forms.TextBox();
             this.NameTwo = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.error_form2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -85,11 +86,23 @@ namespace SkillBoxGame
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.PlayGameButton_Click);
             // 
+            // error_form2
+            // 
+            this.error_form2.AutoSize = true;
+            this.error_form2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.error_form2.Location = new System.Drawing.Point(163, 9);
+            this.error_form2.Name = "error_form2";
+            this.error_form2.Size = new System.Drawing.Size(158, 16);
+            this.error_form2.TabIndex = 5;
+            this.error_form2.Text = "Вы ничего не ввели!";
+            this.error_form2.Visible = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(368, 157);
+            this.Controls.Add(this.error_form2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.NameTwo);
             this.Controls.Add(this.NameOne);
@@ -115,5 +128,6 @@ namespace SkillBoxGame
         private System.Windows.Forms.TextBox NameOne;
         private System.Windows.Forms.TextBox NameTwo;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label error_form2;
     }
 }

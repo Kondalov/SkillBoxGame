@@ -15,16 +15,30 @@ namespace SkillBoxGame
         public Form2()
         {
             InitializeComponent();
-            this.ControlBox = false; // отключаем крестик (закрыть окно)
+            //this.ControlBox = false; // отключаем крестик (закрыть окно)
         }
 
         private void PlayGameButton_Click(object sender, EventArgs e)
         {
-                
+            if (NameOne.Text == "")
+            {
+                this.ControlBox = false;
+                error_form2.Visible = true;
+                NameOne.BackColor = Color.Red;
+            }
+            else if (NameTwo.Text == "")
+            {
+                this.ControlBox = false;
+                error_form2.Visible = true;
+                NameOne.BackColor = default;
+                NameTwo.BackColor = Color.Red;
 
+            }
+            else
+            {
                 Form1.SetPlayersName(NameOne.Text, NameTwo.Text);
-                //this.ControlBox = true;
                 this.Close();
+            }
             
         }
 
