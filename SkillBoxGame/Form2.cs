@@ -15,12 +15,17 @@ namespace SkillBoxGame
         public Form2()
         {
             InitializeComponent();
+            this.ControlBox = false; // отключаем крестик (закрыть окно)
         }
 
         private void PlayGameButton_Click(object sender, EventArgs e)
         {
-            Form1.SetPlayersName(NameOne.Text, NameTwo.Text);
-            this.Close();
+                
+
+                Form1.SetPlayersName(NameOne.Text, NameTwo.Text);
+                //this.ControlBox = true;
+                this.Close();
+            
         }
 
         private void KeyPress_Enter(object sender, KeyPressEventArgs e)
