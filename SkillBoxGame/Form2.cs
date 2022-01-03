@@ -55,6 +55,11 @@ namespace SkillBoxGame
                 e.Handled = true;
                 DialogResult dia = MessageBox.Show("Ошибка ввода! Вводите только буквы...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            else if (e.KeyChar.ToString() == "\r")
+            {
+                button1.PerformClick();
+            }
+
         }
     }
 }
