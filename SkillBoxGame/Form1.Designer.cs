@@ -106,7 +106,9 @@ namespace SkillBoxGame
             // 
             // A1
             // 
+            this.A1.FlatAppearance.BorderSize = 0;
             this.A1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.A1.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.A1.Location = new System.Drawing.Point(12, 27);
             this.A1.Name = "A1";
             this.A1.Size = new System.Drawing.Size(90, 90);
@@ -118,7 +120,9 @@ namespace SkillBoxGame
             // 
             // A2
             // 
+            this.A2.FlatAppearance.BorderSize = 0;
             this.A2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.A2.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.A2.Location = new System.Drawing.Point(108, 27);
             this.A2.Name = "A2";
             this.A2.Size = new System.Drawing.Size(90, 90);
@@ -130,7 +134,9 @@ namespace SkillBoxGame
             // 
             // A3
             // 
+            this.A3.FlatAppearance.BorderSize = 0;
             this.A3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.A3.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.A3.Location = new System.Drawing.Point(204, 27);
             this.A3.Name = "A3";
             this.A3.Size = new System.Drawing.Size(90, 90);
@@ -142,7 +148,9 @@ namespace SkillBoxGame
             // 
             // B3
             // 
+            this.B3.FlatAppearance.BorderSize = 0;
             this.B3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.B3.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.B3.Location = new System.Drawing.Point(204, 123);
             this.B3.Name = "B3";
             this.B3.Size = new System.Drawing.Size(90, 90);
@@ -154,7 +162,9 @@ namespace SkillBoxGame
             // 
             // B2
             // 
+            this.B2.FlatAppearance.BorderSize = 0;
             this.B2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.B2.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.B2.Location = new System.Drawing.Point(108, 123);
             this.B2.Name = "B2";
             this.B2.Size = new System.Drawing.Size(90, 90);
@@ -166,7 +176,9 @@ namespace SkillBoxGame
             // 
             // B1
             // 
+            this.B1.FlatAppearance.BorderSize = 0;
             this.B1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.B1.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.B1.Location = new System.Drawing.Point(12, 123);
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(90, 90);
@@ -178,7 +190,9 @@ namespace SkillBoxGame
             // 
             // C3
             // 
+            this.C3.FlatAppearance.BorderSize = 0;
             this.C3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.C3.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.C3.Location = new System.Drawing.Point(204, 219);
             this.C3.Name = "C3";
             this.C3.Size = new System.Drawing.Size(90, 90);
@@ -190,7 +204,9 @@ namespace SkillBoxGame
             // 
             // C2
             // 
+            this.C2.FlatAppearance.BorderSize = 0;
             this.C2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.C2.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.C2.Location = new System.Drawing.Point(108, 219);
             this.C2.Name = "C2";
             this.C2.Size = new System.Drawing.Size(90, 90);
@@ -202,7 +218,9 @@ namespace SkillBoxGame
             // 
             // C1
             // 
+            this.C1.FlatAppearance.BorderSize = 0;
             this.C1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.C1.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.C1.Location = new System.Drawing.Point(12, 219);
             this.C1.Name = "C1";
             this.C1.Size = new System.Drawing.Size(90, 90);

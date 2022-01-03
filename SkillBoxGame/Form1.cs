@@ -138,9 +138,12 @@ namespace SkillBoxGame
                 }
 
                 MessageBox.Show(winner + " - You Win!!!", "Winner Panel");
+                DisabledButton();
             }
+
             else
             {
+                DisabledButton();
                 if (turn_count == 9)
                 {
                     draw_count.Text = (Int32.Parse(draw_count.Text) + 1).ToString();
