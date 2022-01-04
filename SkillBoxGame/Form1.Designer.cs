@@ -354,7 +354,9 @@ namespace SkillBoxGame
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(325, 429);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(325, 429);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SkillBox Game";

@@ -138,15 +138,75 @@ namespace SkillBoxGame
                     x_win_count.Text = (Int32.Parse(x_win_count.Text) + 1).ToString();
                 }
 
-                MessageBox.Show(winner + " - You Win!!!", "Winner Panel");
+                /*
+                if (MessageBox.Show(winner + " - You Win!!!", "Winner Panel", MessageBoxButtons.RetryCancel, MessageBoxIcon.Asterisk) == DialogResult.Retry)
+                 
+                MessageBox.Show(string) - отображает окно сообщения с указанным текстом.
+
+                Пример: MessageBox.Show(winner + " - You Win!!!", "Winner Panel");
+                где: winner - переменная с именем игрока
+                     Winner Panel - название окна сообщения
+
+                MessageBoxButtons.RetryCancel: MessageBoxButtons - задает константы, определяющие,
+                                                                   какие кнопки отображать.
+                                               RetryCancel - кнопки: Повтор и Отмена
+
+                MessageBoxIcon.Asterisk: MessageBoxIcon - Задает константы, определяющие,
+                                                          какую информацию отображать (значок).
+                                         Asterisk - Окно сообщения содержит символ,
+                                                    состоящий из строчной буквы i в кружке
+
+                DialogResult.Retry: DialogResult - задает идентификаторы, указывающие
+                                                   возвращаемое значение диалогового окна.
+                                    Retry - повтор игры (в данном случаи)
+
+                Если читать код простым языком, то здесь сказано: создай мне окно с текстом,
+                двумя кнопками (повтор\отмена) и по нажатию на кнопку "Повтор" создай мне
+                новую игру, а по нажатию на кнопку "Отмена" ничего не делай.
+                Но если нужно, то можно сделать какое-то действие. Например выход из игры.
+                */
+                if (MessageBox.Show(winner + " - You Win!!!", "Winner Panel", MessageBoxButtons.RetryCancel, MessageBoxIcon.Asterisk) == DialogResult.Retry)
+                {
+                    turn = true;
+                    turn_count = 0;
+
+                    foreach (Control c in Controls)
+                    {
+                        try
+                        {
+                            Button b = (Button)c;
+                            b.Enabled = true;
+                            b.Text = "";
+                        }
+                        catch { }
+                    }
+                }
+                
             }
 
             else
             {
                 if (turn_count == 9)
                 {
-                    draw_count.Text = (Int32.Parse(draw_count.Text) + 1).ToString();
-                    MessageBox.Show("Ничья", "Winner Panel");
+                    if (MessageBox.Show("Ничья", "Winner Panel", MessageBoxButtons.RetryCancel, MessageBoxIcon.Asterisk) == DialogResult.Retry)
+                    {
+                        draw_count.Text = (Int32.Parse(draw_count.Text) + 1).ToString();
+                        turn = true;
+                        turn_count = 0;
+
+                        foreach (Control c in Controls)
+                        {
+                            try
+                            {
+                                Button b = (Button)c;
+                                b.Enabled = true;
+                                b.Text = "";
+                            }
+                            catch { }
+                        }
+                    }
+                    //draw_count.Text = (Int32.Parse(draw_count.Text) + 1).ToString();
+                    //MessageBox.Show("Ничья", "Winner Panel");
                 }
             }
         }
