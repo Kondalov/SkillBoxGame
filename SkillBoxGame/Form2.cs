@@ -53,7 +53,7 @@ namespace SkillBoxGame
             if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
-                DialogResult dia = MessageBox.Show("Ошибка ввода! Вводите только буквы...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                DialogResult dia = MessageBox.Show("Ошибка ввода!\nВведите буквы...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (e.KeyChar.ToString() == "\r")
             {
